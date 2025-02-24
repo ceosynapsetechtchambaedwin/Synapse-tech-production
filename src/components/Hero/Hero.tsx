@@ -43,11 +43,11 @@ function ParallaxImage({ y }: { y: MotionValue<number> }) {
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
         />
-        <img 
+        {/* <img 
           src={Image}
           alt="Tech Innovation"
           className="rounded-2xl w-full object-cover h-[600px] relative z-10"
-        />
+        /> */}
         <motion.div 
           className="absolute -left-6 top-1/4 bg-white/5 backdrop-blur-lg rounded-lg p-4 shadow-xl"
           initial={{ x: -100, opacity: 0 }}
