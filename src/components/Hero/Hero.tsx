@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 import { ChevronRight, Users, Building, Star, ArrowDown } from 'lucide-react';
 import { scrollToSection } from '../../utils/scroll';
 
-import Image from '../../assets/hero_image.png';
+import Image from '../../assets/edwin.png';
 
 interface StatItemProps {
   value: string;
@@ -43,22 +43,18 @@ function ParallaxImage({ y }: { y: MotionValue<number> }) {
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
         />
-        {/* <img 
+        <img 
           src={Image}
           alt="Tech Innovation"
           className="rounded-2xl w-full object-cover h-[600px] relative z-10"
-        /> */}
+        />
         <motion.div 
           className="absolute -left-6 top-1/4 bg-white/5 backdrop-blur-lg rounded-lg p-4 shadow-xl"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <span className="text-sm font-medium">Innovation Tech</span>
-          <div className="flex items-center gap-2 mt-1">
-            <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-xs text-gray-400">En direct</span>
-          </div>
+          
         </motion.div>
       </motion.div>
     </motion.div>
